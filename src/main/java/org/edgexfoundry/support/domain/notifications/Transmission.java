@@ -121,9 +121,10 @@ public class Transmission {
 
   @Override
   public String toString() {
-    return "Transmission [notificationSlug=" + notification != null ? notification.getSlug()
-        : "null" + ", receiver=" + receiver + ", channel=" + channel + ", status=" + status
-            + ", resendCount=" + resendCount + ", records=" + Arrays.toString(records) + "]";
+    return "Transmission [notificationSlug="
+        + (notification != null ? notification.getSlug() : "null") + ", receiver=" + receiver
+        + ", channel=" + channel + ", status=" + status + ", resendCount=" + resendCount
+        + ", records=" + Arrays.toString(records) + "]";
   }
 
 }
